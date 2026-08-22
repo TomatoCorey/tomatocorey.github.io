@@ -1,0 +1,1 @@
+var kana = JSON.parse()
