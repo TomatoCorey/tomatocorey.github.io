@@ -1,32 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 div#game-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: grey;
     text-align: center;
+    width: 100%;
+    min-height: 200px;
 }
 
-div#kana-display {
+div#kana-wrapper {
     background-color: darkgrey;
-    text-align: center;
     font-size: 500%;
-    margin: 0 47.5%;
+    margin: 0;
+    padding: 20px 40px;
 }
 
 p#kana-display {
-    margin: 0%
+    margin: 0%;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     background-color: darkgreen;
-}
-
-header h1 {
-    margin: 6px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
 }
 
 nav ul {
@@ -34,7 +46,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 500px;
 }
 
 nav li {
@@ -51,4 +62,10 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.logo {
+    max-height: 40px;
+    width: auto;
+    display: block;
 }
